@@ -1,13 +1,38 @@
 const express = require("express");
-
+const port = process.env.PORT || 3000;
 const app = express();
 
-const port = process.env.PORT || 3000;
+app.use('/',express.static('./public'));
+
+const mainRouter = express.Router();
+const handleMain = (req,res) => {
+  return res.sendFile(__dirname + '/main2.html');
+}
+mainRouter.get("/",handleMain);
 
 
-app.get("/", (req, res) => {
-    res.send('<iframe src="https://hellocustomer.kb.ap-northeast-2.aws.elastic-cloud.com:9243/app/dashboards?auth_provider_hint=anonymous1#/view/0112f870-a37e-11ec-87af-dd68cc767fa7?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-15m%2Cto%3Anow))&auth_provider_hint=anonymous1" height="600" width="800"></iframe>');
-});
+const menu1Router = express.Router();
+const handleMenu1 = (req,res) => res.send("menu1");
+menu1Router.get("/",handleMenu1);
+
+const menu2Router = express.Router();
+const handleMenu2 = (req,res) => res.send("menu2");
+menu2Router.get("/",handleMenu2);
+
+const menu3Router = express.Router();
+const handleMenu3 = (req,res) => res.send("menu3");
+menu3Router.get("/",handleMenu3);
+
+app.use("/",mainRouter);
+app.use("/menu1",menu1Router);
+app.use("/menu2",menu2Router);
+app.use("/menu3",menu3Router);
+
+
+
+
+
+
 
 //middleware
 //port에 접속 성공하면 콜백 함수를 실행시킨다.
