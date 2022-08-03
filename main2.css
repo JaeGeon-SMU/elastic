@@ -1,0 +1,52 @@
+body{
+    background-image: url('ds.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.homeMenu{
+   
+    background-color: black;
+    width:20vw;
+    height: 50vw;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+#homeName{
+   
+    color: white;
+    margin-top: 2vw;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: italic;
+    height: 4vw;
+    opacity: 1;
+}
+#blackLine{
+    margin-left: 1vw;
+    margin-right: 2vw;
+    height: 1vw;
+    border-bottom: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+}
+.mainMenu{
+    height: 35vw;
+}
+button{
+    color:white;
+    margin-top: 1vw;
+    width: 20vw;
+    font-weight: 900;
+    font-size: 1.5vw;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+button:active{
+    background-color: rgba(0, 0, 0, 0);
+    background-color: black;
+    box-shadow: 2px 2px 2px 2px;
+}
+
