@@ -21,11 +21,21 @@
     </div>
     <script type="text/javascript">
         var btn1 = document.getElementById("mainMenu1");
+        var btn2 = document.getElementById("mainMenu2");
+        var btn3 = document.getElementById("mainMenu3");
 
-        btn1.addEventListener("click",  dd);
+        btn1.addEventListener("click",  moveMenuPage1);
+        btn1.addEventListener("click",  moveMenuPage2);
+        btn1.addEventListener("click",  moveMenuPage3);
 
-        function dd(){
+        function moveMenuPage1(){
             location.href = "/menu1";
+        }
+        function moveMenuPage2(){
+            location.href = "/menu2";
+        }
+        function moveMenuPage3(){
+            location.href = "/menu3";
         }
     </script>
 </body>
