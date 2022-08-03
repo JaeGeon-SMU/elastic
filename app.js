@@ -3,6 +3,7 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 app.use('/',express.static('./public'));
+app.use('/menu1',express.static('./public'));
 
 const mainRouter = express.Router();
 const handleMain = (req,res) => {
