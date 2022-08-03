@@ -12,7 +12,9 @@ mainRouter.get("/",handleMain);
 
 
 const menu1Router = express.Router();
-const handleMenu1 = (req,res) => res.send("menu1");
+const handleMenu1 = (req,res) => {
+  return res.sendFile(__dirname + '/qq.html');
+}
 menu1Router.get("/",handleMenu1);
 
 const menu2Router = express.Router();
