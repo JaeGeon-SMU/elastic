@@ -28,7 +28,8 @@ body>div{
     margin-left: 1vw;
     margin-right: 1vw;
     height: 1vw;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
+    background-color: white;
 }
 .mainMenu{
     height: 35vw;
