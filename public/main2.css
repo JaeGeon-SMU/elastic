@@ -10,13 +10,14 @@ body>div{
     height: 50vw;
 }
 #homeMenu{
-    background-color: white;
+    background-color: black;
     width:20vw;
     height: 50vw;
     text-align: center;
     justify-content: center;
 }
 #homeName{
+    color: white;
     margin-top: 2vw;
     font-weight: 600;
     font-size: 30px;
@@ -33,14 +34,15 @@ body>div{
     height: 35vw;
 }
 button{
+    color:white;
     margin-top: 1vw;
     width: 20vw;
     font-weight: 900;
     font-size: 1.5vw;
     border: none;
-    background-color: white;
+    background-color: black;
 }
 button:active{
-    background-color: white;
+    background-color: black;
     box-shadow: 2px 2px 2px 2px;
 }
