@@ -1,0 +1,77 @@
+body{
+    margin:0;
+    padding: 0;
+}
+#topMenu{
+    margin-top: 1vw;
+    display: flex;
+
+}
+#Photo{
+    width: 85vw;
+    height: 28vw;
+    background-image: url('risk.jpg');
+    margin-left: 5vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#titleName{
+    margin-left: 7vw;
+    font-size: 2vw;
+    font-weight: 700;
+    font-style: italic;
+    width: 20vw;
+    height: 3vw;
+}
+#menuBar{
+    margin-right: 8vw;
+    justify-content: end;
+    display: flex;
+    width: 80vw;
+    height: 4vw;
+}
+.menu{
+    font-weight: 300;
+    margin-top: 1vw;
+    font-size: 1vw;
+    margin-right: 5vw;
+}
+.explain{
+    margin-left: 5vw;
+    margin-top: 2vw;
+    font-size: 1vw;
+    font-weight: 700;
+}
+#selectBox{
+    width: 85vw;
+    height: 30vw;
+
+    margin-left: 5vw;
+    display: flex;
+    justify-content: center;
+
+}
+.box{
+    margin-left: auto;
+    margin-right: auto;
+  
+    background-color: white;
+    width: 20vw;
+    height: 22vw;
+    text-align: center;
+    
+}
+.boxPhoto{
+    margin-top: 2.5vw;
+    width: 20vw;
+    height: 20vw;
+
+}
+p{
+    margin-top: 0;
+    font-size: 2vw;
+    font-weight: 800;
+}
+.box:nth-child(4)>.boxPhoto{
+    border: 0.04vw solid black;
+}

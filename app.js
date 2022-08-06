@@ -7,7 +7,7 @@ app.use('/menu1',express.static('./public'));
 
 const mainRouter = express.Router();
 const handleMain = (req,res) => {
-  return res.sendFile(__dirname + '/main2.html');
+  return res.sendFile(__dirname + '/main.html');
 }
 mainRouter.get("/",handleMain);
 
