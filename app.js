@@ -14,12 +14,14 @@ mainRouter.get("/",handleMain);
 
 const menu1Router = express.Router();
 const handleMenu1 = (req,res) => {
-  return res.sendFile(__dirname + '/qq.html');
+  return res.send("menu1");
 }
 menu1Router.get("/menu1",handleMenu1);
 
 const menu2Router = express.Router();
-const handleMenu2 = (req,res) => res.send("menu2");
+const handleMenu2 = (req,res) => {
+  return res.sendFile(__dirname + '/qq.html');
+}
 menu2Router.get("/",handleMenu2);
 
 const menu3Router = express.Router();
