@@ -17,5 +17,32 @@
             <div class="menu" id="menu4">후원</div>
         </div>
     </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+
+        var menuBtn1 = document.getElementById("menu1");
+        var menuBtn2 = document.getElementById("menu2");
+        var menuBtn3 = document.getElementById("menu3");
+        var menuBtn4 = document.getElementById("menu4");
+
+        menuBtn1.addEventListener("click",menu1);
+        menuBtn2.addEventListener("click",menu2);
+        menuBtn3.addEventListener("click",menu3);
+        menuBtn4.addEventListener("click",menu4);
+
+        function menu1(){
+            location.href = "https://future-price.herokuapp.com/"
+        }
+        function menu2(){
+            location.href ="/menu2";
+        }
+        function menu3(){
+            swal('서울특별시 종로구 홍지문2길 20', "상명대학교 서울 캠퍼스", 'info');
+        }
+        function menu4(){
+            swal('후원 문의는',"010-6659-0680", 'info');
+        }
+        
+    </script>
 </body>
 </html>
