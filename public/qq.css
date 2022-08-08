@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    padding: 0;
+}
+#topMenu{
+    margin-top: 1vw;
+    display: flex;
+
+}
+#titleName{
+    margin-left: 7vw;
+    font-size: 2vw;
+    font-weight: 700;
+    font-style: italic;
+    width: 20vw;
+    height: 3vw;
+}
+#menuBar{
+    margin-right: 8vw;
+    justify-content: end;
+    display: flex;
+    width: 80vw;
+    height: 4vw;
+}
+.menu{
+    font-weight: 300;
+    margin-top: 1vw;
+    font-size: 1vw;
+    margin-right: 5vw;
+}
+.menu:nth-child(1){
+    color:rgb(255, 191, 0);
+    font-weight: 600;
+}
+.menu:hover{
+    font-size: 1.3vw;
+    cursor: pointer;
+}
