@@ -3,7 +3,7 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 app.use('/',express.static('./public'));
-app.use('/menu1',express.static('./public'));
+app.use('/menu2',express.static('./public'));
 
 const mainRouter = express.Router();
 const handleMain = (req,res) => {
@@ -16,7 +16,7 @@ const menu1Router = express.Router();
 const handleMenu1 = (req,res) => {
   return res.sendFile(__dirname + '/qq.html');
 }
-menu1Router.get("/menu2",handleMenu1);
+menu1Router.get("/menu1",handleMenu1);
 
 const menu2Router = express.Router();
 const handleMenu2 = (req,res) => res.send("menu2");
