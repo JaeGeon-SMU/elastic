@@ -72,3 +72,18 @@ p{
     font-size: 2vw;
     font-weight: 800;
 }
+.menu:nth-child(1){
+    color:rgb(255, 191, 0);
+    font-weight: 600;
+}
+.boxPhoto:hover{
+    margin-top: 1vw;
+    margin-left: -1vw;
+    width: 22vw;
+    height: 22vw;
+    cursor: pointer;
+}
+.menu:hover{
+    font-size: 1.3vw;
+    cursor: pointer;
+}
