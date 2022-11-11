@@ -1,6 +1,7 @@
 body{
     margin:0;
     padding: 0;
+    background-color: rgb(246, 245, 245);
 }
 #topMenu{
     margin-top: 1vw;
